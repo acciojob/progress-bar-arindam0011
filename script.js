@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     const circle = document.getElementsByClassName("circle");
     const line = document.getElementsByClassName("line");
+	const container = document.getElementsByClassName("circle");
     let ct=0;
     for(let i of circle){
         i.id = `circle-${ct++}`;
@@ -31,7 +32,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             prev.disabled=false;
         }
 
-        if (ct2 === line.length) {
+        if (ct2 === line.length-1) {
             next.disabled = true;
         }
     }
