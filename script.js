@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             prev.disabled=false;
         }
 
-        if (count === line.length) {
+        if (ct2 === line.length) {
             next.disabled = true;
         }
     }
