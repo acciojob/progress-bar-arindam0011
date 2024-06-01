@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	const container = document.getElementsByClassName("circle");
     let ct=0;
     for(let i of circle){
-        i.id = `circle-${ct++}`;
+        i.id = `circle-${++ct}`;
     }
 
     const next = document.getElementById('next');
